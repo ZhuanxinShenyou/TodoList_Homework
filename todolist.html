@@ -11,13 +11,37 @@
     <div class="container">
         <h1>我的待办事项</h1>
         <div class="input-area">
-            <input type="text" id="task-input" placeholder="输入新任务...">
-            <button id="add-task-btn">添加</button>
+            <input type="text" class="task-input" placeholder="输入新任务...">
+            <button class="add-task-btn">添加</button>
         </div>
         <ul id="task-list">
-            </ul>
+            <!-- 示例任务 -->
+            <li class="task-item">
+                <span class="task-text">完成项目报告</span>
+                <div class="actions">
+                    <button class="toggle-btn">✔</button>
+                    <button class="delete-btn">✖</button>
+                </div>
+            </li>
+            <!-- 示例任务2（已完成） -->
+            <li class="task-item completed">
+                <span class="task-text">购买日用品</span>
+                <div class="actions">
+                    <button class="toggle-btn">✔</button>
+                    <button class="delete-btn">✖</button>
+                </div>
+            </li>
+            <!-- 示例任务3 -->
+            <li class="task-item">
+                <span class="task-text">学习 JavaScript</span>
+                <div class="actions">
+                    <button class="toggle-btn">✔</button>
+                    <button class="delete-btn">✖</button>
+                </div>
+            </li>
+        </ul>
     </div>
 
-    <script src="todoList.js"></script>
+    <!-- <script src="todoList.js"></script> -->
 </body>
 </html>
