@@ -1,50 +1,24 @@
-body {
-    background: linear-gradient(to top left, #16724f, #6becdf);
-    font-family: sans-serif;
-    background-color: #f4f4f4;
+body{
+    
+}
+.container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-size: large;
 }
-
-.container {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    width: 400px;
-}
-.container h1{
-    font-size: 20;
-    text-align: center;
-    color: #333;
-}
-.input-area{
+.sidebar{
+    flex : 0 1 200px;
     display: flex;
-    gap: 10px;
-    margin-bottom: 20px auto;
+    flex-direction: column;
 }
-.task-input{
-    flex:1;
-    padding: 10px;
-    border:1px solid #ddd;
-    border-radius: 8px;
-    font-size: 14px;
+.content{
+    min-height: 100vh;
+    flex : 1;
+    width : 75%;
+    background: linear-gradient(to bottom right, #06249e, #dbbef4);
 }
-
-.task-item.completed {
-    text-decoration: line-through;
-    color: #999;
+.sidebar > *:not(button[title="Add List"]) {
+    flex-shrink: 0;
 }
-.add-task-btn{
-    padding: 10px 20px;
-    color :white;
-    text-align: center;
-    border: 0px;
-    border-radius: 5px;
-    background-color:rgb(41, 186, 138);
-}
-.add-task-btn:hover{
-    background-color: rgb(19, 86, 64);;
+button[title = "Add List"]{
+    margin-top: auto;
 }

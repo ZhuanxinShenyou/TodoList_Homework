@@ -1,47 +1,42 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>纯前端 ToDoList</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<html lang = 'en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width = device-width, initial-scale = 1.0">
+        <title>ToDoList</title>
+        <link rel="stylesheet" href = "style.css"
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "sidebar">
+                <div>
+                    <img class = "avatar" src = "" alt = "">
 
-    <div class="container">
-        <h1>我的待办事项</h1>
-        <div class="input-area">
-            <input type="text" class="task-input" placeholder="输入新任务...">
-            <button class="add-task-btn">添加</button>
+                </div>
+                
+                <ul class = "button-group">
+                    <li>
+                        <img class = "icon" src = "" alt = "">
+                        <button title="Add Item">
+                            Add Item
+                        </button>
+                    </li>
+                </ul>
+                <button title = "Add List">
+                    Add List
+                </button>
+            </div>
+            <div class = "content">
+                <div class = "decoration">
+                    <h1>任务</h1>
+                </div>
+                <ul class = "Todo">
+                    <li class = "task-item">
+                        
+                    </li>
+                </ul>
+
+            </div>
         </div>
-        <ul id="task-list">
-            <!-- 示例任务 -->
-            <li class="task-item">
-                <span class="task-text">完成项目报告</span>
-                <div class="actions">
-                    <button class="toggle-btn">✔</button>
-                    <button class="delete-btn">✖</button>
-                </div>
-            </li>
-            <!-- 示例任务2（已完成） -->
-            <li class="task-item completed">
-                <span class="task-text">购买日用品</span>
-                <div class="actions">
-                    <button class="toggle-btn">✔</button>
-                    <button class="delete-btn">✖</button>
-                </div>
-            </li>
-            <!-- 示例任务3 -->
-            <li class="task-item">
-                <span class="task-text">学习 JavaScript</span>
-                <div class="actions">
-                    <button class="toggle-btn">✔</button>
-                    <button class="delete-btn">✖</button>
-                </div>
-            </li>
-        </ul>
-    </div>
-
-    <!-- <script src="todoList.js"></script> -->
-</body>
+    </body>
 </html>
