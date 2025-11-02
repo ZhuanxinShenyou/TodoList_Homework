@@ -4,39 +4,141 @@
         <meta charset="UTF-8">
         <meta name = "viewport" content="width = device-width, initial-scale = 1.0">
         <title>ToDoList</title>
-        <link rel="stylesheet" href = "style.css"
+        <link rel="stylesheet" href = "style.css">
+        <style>
+            .plus{
+                font-size: 20px;
+            }
+        </style>
     </head>
+
+
+
+
     <body>
         <div class = "container">
             <div class = "sidebar">
-                <div>
-                    <img class = "avatar" src = "" alt = "">
-
-                </div>
-                
                 <ul class = "button-group">
                     <li>
-                        <img class = "icon" src = "" alt = "">
+                        <svg t="1762063736168" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5810" width="200" height="200"><path d="M288.448 613.312A32.224 32.224 0 0 1 288 608v-192c0-1.824 0.16-3.584 0.448-5.312A96.032 96.032 0 0 1 320 224a96 96 0 0 1 31.552 186.688c0.32 1.728 0.448 3.52 0.448 5.312v192c0 1.824-0.16 3.584-0.448 5.312A96.032 96.032 0 0 1 320 800a96 96 0 0 1-31.552-186.688zM768 352h-256a32 32 0 1 1 0-64h256a32 32 0 0 1 0 64z m0 192h-192a32 32 0 0 1 0-64h192a32 32 0 0 1 0 64z m0 192h-256a32 32 0 0 1 0-64h256a32 32 0 0 1 0 64z m-448-64a32 32 0 1 0 0 64 32 32 0 0 0 0-64z m0-384a32 32 0 1 0 0 64 32 32 0 0 0 0-64z" fill="#202425" p-id="5811"></path></svg>
                         <button title="Add Item">
-                            Add Item
+                            杀人
+                        </button>
+                    </li>
+                    <li>
+                        <svg t="1762063736168" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5810" width="200" height="200"><path d="M288.448 613.312A32.224 32.224 0 0 1 288 608v-192c0-1.824 0.16-3.584 0.448-5.312A96.032 96.032 0 0 1 320 224a96 96 0 0 1 31.552 186.688c0.32 1.728 0.448 3.52 0.448 5.312v192c0 1.824-0.16 3.584-0.448 5.312A96.032 96.032 0 0 1 320 800a96 96 0 0 1-31.552-186.688zM768 352h-256a32 32 0 1 1 0-64h256a32 32 0 0 1 0 64z m0 192h-192a32 32 0 0 1 0-64h192a32 32 0 0 1 0 64z m0 192h-256a32 32 0 0 1 0-64h256a32 32 0 0 1 0 64z m-448-64a32 32 0 1 0 0 64 32 32 0 0 0 0-64z m0-384a32 32 0 1 0 0 64 32 32 0 0 0 0-64z" fill="#202425" p-id="5811"></path></svg>
+                        <button title="Add Item">
+                            杀光杀光
                         </button>
                     </li>
                 </ul>
-                <button title = "Add List">
+                <button title = "Add List" class = "add-list-btn">
+                    <span class = 'plus'>+</span>
                     Add List
                 </button>
             </div>
+
+
+
+
+
             <div class = "content">
                 <div class = "decoration">
+                    <svg t="1762063940871" class="icon" viewBox="0 0 1029 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6976" width="200" height="200"><path d="M1001.423238 494.592q21.504 20.48 22.528 45.056t-16.384 40.96q-19.456 17.408-45.056 16.384t-40.96-14.336q-5.12-4.096-31.232-28.672t-62.464-58.88-77.824-73.728-78.336-74.24-63.488-60.416-33.792-31.744q-32.768-29.696-64.512-28.672t-62.464 28.672q-10.24 9.216-38.4 35.328t-65.024 60.928-77.824 72.704-75.776 70.656-59.904 55.808-30.208 27.136q-15.36 12.288-40.96 13.312t-44.032-15.36q-20.48-18.432-19.456-44.544t17.408-41.472q6.144-6.144 37.888-35.84t75.776-70.656 94.72-88.064 94.208-88.064 74.752-70.144 36.352-34.304q38.912-37.888 83.968-38.4t76.8 30.208q6.144 5.12 25.6 24.064t47.616 46.08 62.976 60.928 70.656 68.096 70.144 68.096 62.976 60.928 48.128 46.592zM447.439238 346.112q25.6-23.552 61.44-25.088t64.512 25.088q3.072 3.072 18.432 17.408l38.912 35.84q22.528 21.504 50.688 48.128t57.856 53.248q68.608 63.488 153.6 142.336l0 194.56q0 22.528-16.896 39.936t-45.568 18.432l-193.536 0 0-158.72q0-33.792-31.744-33.792l-195.584 0q-17.408 0-24.064 10.24t-6.656 23.552q0 6.144-0.512 31.232t-0.512 53.76l0 73.728-187.392 0q-29.696 0-47.104-13.312t-17.408-37.888l0-203.776q83.968-76.8 152.576-139.264 28.672-26.624 57.344-52.736t52.224-47.616 39.424-36.352 19.968-18.944z" p-id="6977" fill="#ffffff"></path></svg>                    
                     <h1>任务</h1>
                 </div>
                 <ul class = "Todo">
                     <li class = "task-item">
-                        
+                        <input type = "checkbox" class="task-checkbox"title = "task-checkbox">
+                        <span>杀光他们</span>
+                    </li>
+                    <li class = "task-item">
+                        <input type = "checkbox" class="task-checkbox"title = "task-checkbox">
+                        <span>杀光他们</span>
+                    </li>
+                    <li class = "task-item">
+                        <input type = "checkbox" class="task-checkbox"title = "task-checkbox">
+                        <span>杀光他们</span>
+                    </li>
+                    <li class = "task-item">
+                        <input type = "checkbox" class="task-checkbox"title = "task-checkbox">
+                        <span>杀光他们</span>
+                    </li>
+                    <li class = "task-item">
+                        <input type = "checkbox" class="task-checkbox"title = "task-checkbox">
+                        <span>杀光他们</span>
+                    </li>
+                    <li class = "task-item">
+                        <input type = "checkbox" class="task-checkbox"title = "task-checkbox">
+                        <span>杀光他们</span>
+                    </li>
+                    <li class = "task-item">
+                        <input type = "checkbox" class="task-checkbox"title = "task-checkbox">
+                        <span>杀光他们</span>
+                    </li>
+                    <li class = "task-item">
+                        <input type = "checkbox" class="task-checkbox"title = "task-checkbox">
+                        <span>杀光他们</span>
+                    </li>
+                    <li class = "task-item">
+                        <input type = "checkbox" class="task-checkbox"title = "task-checkbox">
+                        <span>杀光他们</span>
+                    </li>
+                    <li class = "task-item">
+                        <input type = "checkbox" class="task-checkbox"title = "task-checkbox">
+                        <span>杀光他们</span>
+                    </li>
+                    <li class = "task-item">
+                        <input type = "checkbox" class="task-checkbox"title = "task-checkbox">
+                        <span>杀光他们</span>
                     </li>
                 </ul>
+                <button class = "completed" title="completed">
+                    <span class="arrow">▼</span>
+                    已完成
+                    <span class="completedCount">1</span>
+                </button>
 
+                <ul class = "completed-tasks">
+                    <li class = "completed-task-item">
+                        <input type = "checkbox" class="task-checkbox"title = "task-checkbox">
+                        <span>杀光他们</span>
+                    </li>
+                </ul>
             </div>
+
+
+
+
+
+
+
+<div class="detail">
+    <div class="detail-header">
+        <h2 class="detail-title">细节</h2>
+        <button class="close-btn" title="关闭">×</button>
+    </div> 
+    <div class="step-box">
+        <h3 class="step-title">步骤</h3>
+        <div class="step-container">
+            <ul class="step">
+                <li class="step-item">
+                    <input type="checkbox" class="step-checkbox" title="step-checkbox">
+                    <span>杀死他们的妈妈</span>
+                </li>
+                <li class="step-item">
+                    <input type="checkbox" class="step-checkbox" title="step-checkbox">
+                    <span>完成第二步</span>
+                </li>
+            </ul>
+            <button class="add-step" title="add-step">
+                添加步骤
+            </button>
+        </div>
+    </div>
+    
+
+</div>
         </div>
     </body>
 </html>
